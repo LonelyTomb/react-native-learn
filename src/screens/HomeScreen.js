@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, StyleSheet, View, Button } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = () => {
   return (
@@ -12,6 +12,13 @@ const HomeScreen = () => {
         }}
         style={styles.buttonStyle}
       />
+      <TouchableOpacity
+        onPress={() => {
+          console.log("Touched!");
+        }}
+      >
+        <Text style={styles.buttonStyle}>Go to List Demo</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -26,7 +33,7 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   buttonStyle: {
-    marginVertical: 50,
+    marginVertical: 10,
   },
 });
 
