@@ -21,11 +21,28 @@ const HomeScreen = ({ navigation }) => {
       />
 
       <Button
+        title="Go to Counter Scren"
+        onPress={() => {
+          navigation.navigate("Counter");
+        }}
+        style={styles.buttonStyle}
+      />
+
+      <Button
         title="View Images"
         onPress={() => {
           navigation.navigate("Images");
         }}
         style={styles.buttonStyle}
+      />
+
+      <Button
+        title="View Colors"
+        onPress={() => {
+          navigation.navigate("Color");
+        }}
+        style={styles.buttonStyle}
+        color="red"
       />
     </View>
   );
@@ -41,7 +58,8 @@ const styles = StyleSheet.create({
     marginTop: 15,
   },
   buttonStyle: {
-    marginVertical: 10,
+    margin: 20,
+    padding: 20
   },
 });
 
