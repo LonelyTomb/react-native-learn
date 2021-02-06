@@ -44,6 +44,14 @@ const HomeScreen = ({ navigation }) => {
         style={styles.buttonStyle}
         color="red"
       />
+      <Button
+        title="View Squares"
+        onPress={() => {
+          navigation.navigate("Square");
+        }}
+        style={styles.buttonStyle}
+        color="cyan"
+      />
     </View>
   );
 };
