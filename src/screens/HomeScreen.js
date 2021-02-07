@@ -60,6 +60,14 @@ const HomeScreen = ({ navigation }) => {
         style={styles.buttonStyle}
         color="grey"
       />
+      <Button
+        title="View Box Demo"
+        onPress={() => {
+          navigation.navigate("Box");
+        }}
+        style={styles.buttonStyle}
+        color="gray"
+      />
     </View>
   );
 };
@@ -75,7 +83,7 @@ const styles = StyleSheet.create({
   },
   buttonStyle: {
     margin: 20,
-    padding: 20
+    padding: 20,
   },
 });
 
