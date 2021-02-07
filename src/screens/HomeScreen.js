@@ -52,6 +52,14 @@ const HomeScreen = ({ navigation }) => {
         style={styles.buttonStyle}
         color="cyan"
       />
+      <Button
+        title="View Text Demo"
+        onPress={() => {
+          navigation.navigate("Text");
+        }}
+        style={styles.buttonStyle}
+        color="grey"
+      />
     </View>
   );
 };
